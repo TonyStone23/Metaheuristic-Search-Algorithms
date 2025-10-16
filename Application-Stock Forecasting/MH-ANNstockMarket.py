@@ -1,3 +1,6 @@
+#====================================================================================
+# Stock Price prediction with MH-ANN
+#====================================================================================
 import pandas as pd
 import random as r
 import numpy as np
@@ -715,4 +718,5 @@ plt.legend()
 plt.grid(True)
 
 plt.tight_layout()
+
 plt.show()
