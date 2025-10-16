@@ -1,5 +1,7 @@
 #====================================================================================
 # Stock Price prediction with MH-ANN
+
+# FFNN from Dr. Alaa Sheta
 #====================================================================================
 import pandas as pd
 import random as r
@@ -16,11 +18,11 @@ np.random.seed(seed)
 
 def getStock(num):
     if num == 1: #DJI
-        training = pd.read_csv("Stock Time Series/Data/DJA_training.csv")
-        validation = pd.read_csv("Stock Time Series/Data/DJA_validation.csv")
+        training = pd.read_csv("data/DJA_training.csv")
+        validation = pd.read_csv("data/DJA_validation.csv")
     if num == 2: #S&P
-        training = pd.read_csv("Stock Time Series/Data/^SPX_prior_five_years.csv")
-        validation = pd.read_csv("Stock Time Series/Data/^SPX_last_year.csv")
+        training = pd.read_csv("data/^SPX_prior_five_years.csv")
+        validation = pd.read_csv("data/^SPX_last_year.csv")
 
     return training, validation
 
@@ -720,3 +722,4 @@ plt.grid(True)
 plt.tight_layout()
 
 plt.show()
+
