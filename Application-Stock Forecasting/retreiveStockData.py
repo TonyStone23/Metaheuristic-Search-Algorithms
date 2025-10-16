@@ -1,3 +1,6 @@
+#============================================================================================
+# Stock data retrieval (from yahoo finance)
+#============================================================================================
 import yfinance as yf
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -66,3 +69,4 @@ if __name__ == "__main__":
 
     else:
         print("Failed to fetch stock data.")
+
