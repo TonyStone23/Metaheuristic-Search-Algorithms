@@ -1,3 +1,7 @@
+#====================================================================
+# General Data and Model Functions
+# GA, CSA, and GTO for weight optimization of various regression models.
+#--------------------------------------------------------------------
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -9,7 +13,7 @@ np.random.seed(42)
 #--------------------------------------------------------------------
 # Collect simulated blueberry data
 def getData(targets, predictors):
-    data = pd.read_csv("C:/Users/apsto/OneDrive - Southern Connecticut State University/Research/Agriculture Prediction/Blueberry Data/blueberryDataCleaned.csv")
+    data = pd.read_csv("blueberryDataCleaned.csv")
     X = np.asarray(data[predictors])
     ys = np.asarray(data[targets])
     return X, ys
@@ -455,3 +459,4 @@ Try Fourier Basis
 
 Investigate GA and GTO
 """
+
